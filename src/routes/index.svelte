@@ -21,4 +21,12 @@
 <section>
 	<PopularMovies {popular} />
 </section>
+
 <!-- //dbceed12e440d492620b9f8d466bdc87 -->
+<style>
+	:global(*) {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+</style>
