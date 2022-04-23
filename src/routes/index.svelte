@@ -29,4 +29,7 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
+	:global(body) {
+		margin: 0 10%;
+	}
 </style>

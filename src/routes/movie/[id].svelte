@@ -28,7 +28,11 @@
 	<div class="text-container">
 		<h1>{movieDetail.title}</h1>
 		<p class="overview">{movieDetail.overview}</p>
-		<p><span>Release Date </span>{movieDetail.release_date}</p>
+		<p>
+			<span>Release Date </span>{movieDetail.release_date} <br />
+			<span>Budget: $</span>{movieDetail.budget}<br />
+			<span>Rating: </span>{movieDetail.vote_average} <br />
+		</p>
 	</div>
 </div>
 
