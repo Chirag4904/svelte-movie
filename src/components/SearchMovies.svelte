@@ -1,6 +1,7 @@
 <script>
 	let inputValue = '';
 	let active = false;
+	import { goto } from '$app/navigation';
 
 	function cancelActive() {
 		if (inputValue) {
@@ -9,9 +10,13 @@
 			active = false;
 		}
 	}
+
+	function submitSearch() {
+		goto('search/' + inputValue);
+	}
 </script>
 
-<form class="search">
+<form on:submit|preventDefault={submitSearch} class="search">
 	{#if !active}
 		<label for="search_movie"> Search Movie</label>
 	{/if}
@@ -20,7 +25,7 @@
 		on:blur={cancelActive}
 		on:focus={() => (active = true)}
 		bind:value={inputValue}
-		name="search_movie"
+		name="search-movie"
 		type="text"
 		class={active ? 'selected' : ''}
 	/>

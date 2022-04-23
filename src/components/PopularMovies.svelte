@@ -1,8 +1,6 @@
 <script>
 	export let popular;
 	import MovieCard from './MovieCard.svelte';
-	// console.log(popular);
-	// popular.map((m) => console.log(m));
 </script>
 
 <h3>Popular Movies</h3>

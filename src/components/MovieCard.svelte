@@ -4,7 +4,10 @@
 
 <div class="movie-card">
 	<a href={'/movie/' + movie.id}>
-		<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
+		<img
+			src={'https://image.tmdb.org/t/p/w500' + (movie?.poster_path || movie?.backdrop_path)}
+			alt={movie.title}
+		/>
 	</a>
 	<div class="description">
 		<h2>{movie.title}</h2>
